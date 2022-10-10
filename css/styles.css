@@ -1,0 +1,143 @@
+:root {
+    --color-primery: #4f4f4f;
+    --color-backgroun: #f5f5f5;
+    --color-primary-white: #ffffff;
+    --color-section-background: #2f303a;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: var(--color-primery)
+    background-color: #f5f5f5;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Raleway', sans-serif;
+    
+}
+
+.visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+}
+
+.nav-links {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.1428;
+    letter-spacing: 0.02em;
+    color: #212121;
+}
+
+.nav-links:hover {
+    color: #2196F3;
+}
+
+.logo-web {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;   
+    letter-spacing: 0.03em; 
+    color: #2196F3;
+}
+
+.logo-studio {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.1923;
+    letter-spacing: 0.03em;
+    color: #000000;
+}
+
+.hero-title {
+    display: flexbox;
+    Width: 696px;
+    Height: 120px;
+    Top: 280px;
+    Left: 452px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--color-primary-white);
+}
+
+.section-main {
+    
+    position: relative;
+    width: 1600px;
+    height: 600px;
+    left: 0px;
+    top: 80px;
+    padding: 200px 452px 280px;
+    line-height: 1.36;
+    background: #2F303A;
+}
+
+.primery-button {
+    font-family: 'Roboto';
+    font-style: normal;
+    color: var(--color-primary-white);
+    Width: 216px;
+    Height: 50px;
+    Top: 430px;
+    margin: 30px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.875;
+    cursor: pointer;
+    align-items: normal;
+    text-align: center;
+    letter-spacing: 0.06em;
+    background-color: #2196f3;
+}
+.primery-button:hover {
+    color: #f5f5f5;
+    background-color: var(--color-primary-white);
+    border: 2px solid red;
+}
+primery-button:focus {
+    color: #f5f5f5;
+    background-color: var(--color-primary-white);
+    border: 2px solid red;
+
+
+.section-advantages {
+    /*position: relative;
+    width: 1600px;
+    height: 246px;
+    background-color: var(--color-primary-white);*/
+
+}
+
+/*.hero-button {
+    background-color: var(--accent-color);
+    color: var(--primary-white-color);
+
+    font-style: inherit;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 30px;
+
+    cursor: pointer;*/
+}
