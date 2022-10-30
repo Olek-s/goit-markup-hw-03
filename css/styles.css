@@ -21,11 +21,6 @@ body {
   letter-spacing: 0.03em;
 }
 
-a {
-  text-decoration: none;
-  color: inherit;
-}
-
 ul {
   list-style: none;
 }
@@ -36,14 +31,21 @@ button {
 }
 
 /*header*/
-
-.header-container {
+.header {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
-  max-width: 1600px;
-  height: 80px;
-  padding: 32px 0px;
+  max-width: 100%;
+  border-bottom: 1px solid #ececec;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1200px;
+  flex-wrap: wrap;
+  padding: 0 15px;
 }
 
 .visually-hidden {
@@ -63,42 +65,38 @@ button {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-left: 215px;
+  padding: 0 215px 0 0;
 }
 
 .nav-item {
-  display: flexbox;
-  justify-content: center;
   font-weight: 500;
   font-size: 14px;
   text-decoration: none;
   line-height: 1.1428;
   letter-spacing: 0.02em;
   color: var(--color-secondary-button);
-  cursor: pointer;
+  gap: 50px;
+  padding: 32px 0;
 }
 
+.nav-item:current,
 .nav-item:hover,
 .nav-item:focus {
   color: var(--color-blue);
 }
 
-.nav-item-element {
+.nav-item-elements {
   display: flex;
-  width: 281px;
   justify-content: space-between;
   align-items: center;
-  padding: 24px 0px;
+  gap: 50px;
   margin-left: 90px;
 }
 
 .nav-item-second {
   display: flex;
-  width: 307px;
-  justify-content: space-between;
   align-items: center;
-  padding: 32px 0px;
-  margin-right: 215px;
+  gap: 50px;
 }
 
 .logo {
@@ -108,6 +106,8 @@ button {
   line-height: 1.1923;
   color: var(--color-blue);
   text-decoration: none;
+  display: block;
+  padding: 24px 0px;
 }
 
 .logo-studio {
@@ -120,17 +120,15 @@ button {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 1600px;
-  height: 600px;
+  max-width: 100%;
   flex-direction: column;
-  margin-bottom: 90px;
+  padding: 196px 455px 190px;
   line-height: 1.36;
   background-color: var(--color-section-background);
 }
 
 .hero-title {
-  width: 696px;
-  margin-bottom: 30px;
+  padding: 94px 250px 30px;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -150,7 +148,7 @@ button {
   letter-spacing: 0.06em;
   color: var(--color-primary-white);
   background-color: var(--color-blue);
-  border: none;
+  border: 0.5px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
 }
@@ -160,14 +158,20 @@ button {
   background-color: #188ce8;
 }
 
-.section-advantages {
+.our-tasks {
+  max-width: 100%;
   display: flex;
-  width: 1170px;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  flex-direction: row;
-  margin-left: 215px;
-  margin-bottom: 90px;
+  padding: 94px 0px;
+}
+
+.section-advantages {
+  display: flex;
+  justify-content: center;
+  max-width: 100%;
+  padding-bottom: 94px;
 }
 
 .advantages-list {
@@ -201,14 +205,6 @@ button {
 }
 /*section "our-tasks"*/
 
-.our-tasks {
-  display: flex;
-  flex-direction: column;
-  max-width: 1170px;
-  justify-content: center;
-  margin-left: 215px;
-  margin-bottom: 90px;
-}
 .tasks-title {
   font-weight: 700;
   font-size: 36px;
@@ -230,33 +226,37 @@ button {
 .team {
   display: flex;
   flex-direction: column;
-  justify-items: center;
   align-items: center;
-  width: 1600px;
+  max-width: 100%;
   background-color: var(--color-secondary-background);
+  padding: 94px 0;
 }
 
 .our-team {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 1600px;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.67;
+  margin-bottom: 50px;
   color: var(--color-secondary-button);
-  padding: 90px 0px 50px;
 }
 
 .team-list {
   display: flex;
   gap: 30px;
+  padding-bottom: 90px;
 }
 
 .team-item {
   display: flex;
   flex-direction: column;
-  margin-bottom: 90px;
+  padding-bottom: 30px;
+  background-color: var(--color-primary-white);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
 }
 
 .team-position {
@@ -274,8 +274,7 @@ button {
   line-height: 1.1875;
   text-align: center;
   color: var(--color-secondary-button);
-  margin-top: 30px;
-  margin-bottom: 10px;
+  padding: 30px 0 10px;
 }
 
 /*footer*/
@@ -284,17 +283,11 @@ button {
   display: flex;
   flex-direction: column;
   background-color: var(--color-section-background);
-  width: 1600px;
+  max-width: 100%;
 }
 
 .section-footer {
-  margin-top: 60px;
-  margin-left: 215px;
-  margin-bottom: 60px;
-}
-
-.address {
-  margin-top: 20px;
+  padding: 60px 0 60px 215px;
 }
 
 .logo-studio-footer {
@@ -341,9 +334,8 @@ button {
   flex-direction: column;
   justify-items: center;
   align-items: center;
-  width: 1170px;
-  margin-top: 90px;
-  margin-left: 215px;
+  max-width: 100%;
+  padding: 94px 0;
 }
 
 .buttons-row {
@@ -351,9 +343,9 @@ button {
   justify-items: center;
   justify-content: space-between;
   align-items: center;
-  width: 575px;
   height: 38px;
   gap: 8px;
+  margin-bottom: 50px;
 }
 
 .secondary-button {
@@ -362,13 +354,11 @@ button {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.625;
-  align-items: normal;
-  text-align: center;
   letter-spacing: 0.03em;
   border: #000000;
   border-radius: 4px;
   cursor: pointer;
-  padding: 0px 22px;
+  padding: 6px 22px;
 }
 .secondary-button:hover {
   color: var(--color-primary-white);
@@ -378,7 +368,6 @@ button {
 .portfolio {
   display: flex;
   flex-wrap: wrap;
-  width: 1170px;
   gap: 30px;
 }
 
@@ -389,13 +378,20 @@ button {
   height: 404px;
 }
 
+.img-text {
+  display: flex;
+  flex-direction: column;
+  border-width: 0 1px 1px 1px;
+  border-color: #eeeeee;
+  padding: 20px 24px;
+}
+
 .portfolio-title {
   font-weight: 400;
   font-style: normal;
   font-size: 16px;
   line-height: 1.875;
   color: var(--color-advantages-text);
-  margin-left: 24px;
 }
 
 .portfolio-text {
@@ -404,7 +400,4 @@ button {
   line-height: 36px;
   letter-spacing: 0.06em;
   color: var(--color-secondary-button);
-  margin-top: 20px;
-  margin-bottom: 4px;
-  margin-left: 24px;
 }
