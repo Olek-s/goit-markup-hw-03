@@ -100,8 +100,7 @@ button {
   color: var(--color-blue);
 }
 
-.nav-item:hover,
-.nav-item:focus {
+.nav-item:hover {
   color: var(--color-blue);
 }
 
@@ -128,6 +127,10 @@ button {
   color: var(--color-advantages-text);
   gap: 50px;
   padding: 32px 0;
+}
+
+.nav-item-contact:hover {
+  color: var(--color-blue);
 }
 
 .logo {
@@ -306,8 +309,9 @@ button {
   line-height: 1.1875;
   text-align: center;
   color: var(--color-secondary-button);
-  padding-bottom: 10px;
+  margin-bottom: 10px;
 }
+
 .team-signature {
   padding: 30px;
   background-color: var(--color-background);
@@ -320,7 +324,7 @@ button {
   flex-direction: column;
   background-color: var(--color-section-background);
   max-width: 100%;
-  padding: 60px 0 60px 215px;
+  padding: 60px 0;
 }
 
 .logo-studio-footer {
@@ -344,8 +348,9 @@ button {
   line-height: 1.7142;
   color: #ffffff;
   text-decoration: none;
-  padding-bottom: 9px;
+  margin-bottom: 9px;
 }
+
 .mail-address:hover {
   color: var(--color-blue);
 }
@@ -360,7 +365,7 @@ button {
   font-style: normal;
   color: rgba(255, 255, 255, 0.6);
   text-decoration: none;
-  padding-bottom: 9px;
+  margin-bottom: 9px;
 }
 
 .address-email:hover {
@@ -368,6 +373,18 @@ button {
 }
 
 .address-email:focus {
+  color: var(--color-blue);
+}
+
+.address-phone {
+  font-size: 14px;
+  line-height: 1.7142;
+  font-style: normal;
+  color: rgba(255, 255, 255, 0.6);
+  text-decoration: none;
+}
+
+.address-phone:hover {
   color: var(--color-blue);
 }
 
